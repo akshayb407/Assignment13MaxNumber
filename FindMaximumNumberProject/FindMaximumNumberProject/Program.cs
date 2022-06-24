@@ -8,7 +8,7 @@ namespace FindMaximumNumberProject
         {
             Console.WriteLine("Find Maximum Number");
 
-            int output = MaximumNumberCheck.MaximumIntegerNumber(11, 22, 33);
+            int output = MaximumNumberCheck.MaximumIntegerNumber(20,40,80);
         }
     }
 }
