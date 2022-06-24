@@ -8,34 +8,36 @@ namespace FindMaximumNumberProject
 {
     internal class MaximumNumberCheck
     {
-        
-       ///<summary>
-        ///this is method is created for maximum int number
-       ///</summary>
-       public static int MaximumIntegerNumber(int firstValue, int secondValue, int thirdValue)
+
+        ///<summary>
+        ///this is method is created for maximum Float number
+        ///</summary>
+        public static double MaximumFloatNumber(double firstdouble, double seconddouble, double thirddouble)
         {
-            if  (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
-                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
-                firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) >= 0)
+            if (firstdouble.CompareTo(seconddouble) > 0 && firstdouble.CompareTo(thirddouble) > 0 ||
+                firstdouble.CompareTo(seconddouble) >= 0 && firstdouble.CompareTo(thirddouble) > 0 ||
+                firstdouble.CompareTo(seconddouble) > 0 && firstdouble.CompareTo(thirddouble) >= 0)
             {
-                return firstValue;
+                return firstdouble;
             }
-            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0 ||
-                secondValue.CompareTo(firstValue) >= 0 && secondValue.CompareTo(thirdValue) > 0 ||
-                secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) >= 0)
+            if (seconddouble.CompareTo(firstdouble) > 0 && seconddouble.CompareTo(thirddouble) > 0 ||
+                seconddouble.CompareTo(firstdouble) >= 0 && seconddouble.CompareTo(thirddouble) > 0 ||
+                seconddouble.CompareTo(firstdouble) > 0 && seconddouble.CompareTo(thirddouble) >= 0)
             {
-                return secondValue;
+                return seconddouble;
 
             }
-            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0 ||
-                thirdValue.CompareTo(firstValue) >= 0 && thirdValue.CompareTo(secondValue) > 0 ||
-                thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) >= 0 )
+            if (thirddouble.CompareTo(firstdouble) > 0 && thirddouble.CompareTo(seconddouble) > 0 ||
+                thirddouble.CompareTo(firstdouble) >= 0 && thirddouble.CompareTo(seconddouble) > 0 ||
+                thirddouble.CompareTo(firstdouble) > 0 && thirddouble.CompareTo(seconddouble) >= 0)
             {
-                return thirdValue;
+                return thirddouble;
 
             }
-            return firstValue;
+            throw new NotImplementedException("firstNumber, secondNumber, thirdNumber are same");
 
         }
+
+      
     }
 }
