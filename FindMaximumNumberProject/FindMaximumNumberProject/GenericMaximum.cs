@@ -8,6 +8,12 @@ namespace FindMaximumNumberProject
 {
     public class GenericMaximum<T> where T : IComparable
     {
+
+        ///<summary>
+        ///this is method is created for Maximum Method to take more than 3 parameters and used Sorting
+        ///</summary>
+
+
         public T[] value;
         public GenericMaximum(T[]value)
         {
