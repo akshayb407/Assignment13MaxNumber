@@ -8,7 +8,7 @@ namespace FindMaximumNumberProject
         {
             Console.WriteLine("Find Maximum Number");
 
-            double doubleoutput = MaximumNumberCheck.MaximumFloatNumber(20.20, 40.20, 80.20);
+            string Stringoutput = MaximumNumberCheck.MaximumStringNumber("30","40","50");
         }
     }
 }

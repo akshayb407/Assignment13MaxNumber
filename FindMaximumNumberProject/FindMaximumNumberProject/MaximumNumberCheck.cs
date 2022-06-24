@@ -10,28 +10,28 @@ namespace FindMaximumNumberProject
     {
 
         ///<summary>
-        ///this is method is created for maximum Float number
+        ///this is method is created for maximum String number
         ///</summary>
-        public static double MaximumFloatNumber(double firstdouble, double seconddouble, double thirddouble)
+        public static string MaximumStringNumber(string firstString, string secondString, string thirdString)
         {
-            if (firstdouble.CompareTo(seconddouble) > 0 && firstdouble.CompareTo(thirddouble) > 0 ||
-                firstdouble.CompareTo(seconddouble) >= 0 && firstdouble.CompareTo(thirddouble) > 0 ||
-                firstdouble.CompareTo(seconddouble) > 0 && firstdouble.CompareTo(thirddouble) >= 0)
+            if (firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) > 0 ||
+                firstString.CompareTo(secondString) >= 0 && firstString.CompareTo(thirdString) > 0 ||
+                firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) >= 0)
             {
-                return firstdouble;
+                return firstString;
             }
-            if (seconddouble.CompareTo(firstdouble) > 0 && seconddouble.CompareTo(thirddouble) > 0 ||
-                seconddouble.CompareTo(firstdouble) >= 0 && seconddouble.CompareTo(thirddouble) > 0 ||
-                seconddouble.CompareTo(firstdouble) > 0 && seconddouble.CompareTo(thirddouble) >= 0)
+            if (secondString.CompareTo(firstString) > 0 && secondString.CompareTo(thirdString) > 0 ||
+                secondString.CompareTo(firstString) >= 0 && secondString.CompareTo(thirdString) > 0 ||
+                secondString.CompareTo(firstString) > 0 && secondString.CompareTo(thirdString) >= 0)
             {
-                return seconddouble;
+                return secondString;
 
             }
-            if (thirddouble.CompareTo(firstdouble) > 0 && thirddouble.CompareTo(seconddouble) > 0 ||
-                thirddouble.CompareTo(firstdouble) >= 0 && thirddouble.CompareTo(seconddouble) > 0 ||
-                thirddouble.CompareTo(firstdouble) > 0 && thirddouble.CompareTo(seconddouble) >= 0)
+            if (thirdString.CompareTo(firstString) > 0 && thirdString.CompareTo(secondString) > 0 ||
+                thirdString.CompareTo(firstString) >= 0 && thirdString.CompareTo(secondString) > 0 ||
+                thirdString.CompareTo(firstString) > 0 && thirdString.CompareTo(secondString) >= 0)
             {
-                return thirddouble;
+                return thirdString;
 
             }
             throw new NotImplementedException("firstNumber, secondNumber, thirdNumber are same");
